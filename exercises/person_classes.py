@@ -46,9 +46,12 @@ class CandidateBasic(PersonWithMethod):
 
 
 
-# Class that blends data AND behavior
-# inherited from a parent class (through the use of "super")
-# with its own customized data AND behavor
+# Class that blends parent class data with its own
+# data ("party") and adds new behavior
+# Note the use of "super". The "full_name"
+# method is also available via basic inheritance, 
+# though note we could "override" it here to customize
+# it's behavior for a Candidate
 class CandidateAdvanced(PersonWithData):
 
     def __init__(self, first_name, last_name, party):
