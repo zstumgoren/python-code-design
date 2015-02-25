@@ -7,7 +7,7 @@ class Person(object):
 # Not super useful beyond namespacing purposes (i.e.
 # grouping the method in a seemingly logical spot; same
 # could be accomplished by placing the function in a person.py,
-# with the overhead of a class)
+# without the overhead of a class)
 class PersonNamespace(object):
 
     def full_name(self, first_name, last_name):
